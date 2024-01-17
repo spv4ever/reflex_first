@@ -3,6 +3,12 @@ import reflex as rx
 
 from reflex_first import style
 from reflex_first.state import State
+from reflex_first.componentes.navbar import navbar
+from reflex_first.views.header.header import header
+from reflex_first.views.links.links import links
+
+
+
 
 
 
@@ -22,9 +28,11 @@ def qa(question: str, answer: str) -> rx.Component:
 
 
 def index() -> rx.Component:
-    return rx.container(
-        chat(),
-        action_bar(),
+    return rx.vstack(
+        navbar(),
+        header(),
+        links(),
+
     )
 
 
@@ -51,6 +59,7 @@ def action_bar() -> rx.Component:
             style=style.button_style,
         ),
     )
+
 
 
 app = rx.App()
