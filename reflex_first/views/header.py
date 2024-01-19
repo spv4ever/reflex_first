@@ -2,9 +2,9 @@ import reflex as rx
 
 def header()-> rx.Component:
     return rx.vstack(
-        rx.avatar(name="Albert García",size="xl"),
+        rx.avatar(name="Albert García",size="2xl", src = "avatar2.png"),
         rx.text("@spv4ever"),
-        rx.text('Hola Mi nombre es Alberto García'),
+        rx.text('Hola, mi nombre es Alberto García.'),
         rx.text("""Soy técnico informático con más de 30 años de experiencia, 
                 fanático de la gestión de datos y bigdata. Entre mis hobbies está seguir
                 aprendiendo cada día y python me está fascinando. Actualmente sigo desarrollando

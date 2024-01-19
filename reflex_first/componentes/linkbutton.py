@@ -6,4 +6,5 @@ def linkbutton(text: str, url: str)->rx.Component:
         href=url,
         color="rgb(107,99,246)",
         button=True,
+        is_external=True,
     )

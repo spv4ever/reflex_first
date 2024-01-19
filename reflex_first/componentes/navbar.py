@@ -1,17 +1,20 @@
 import reflex as rx
 
 def navbar():
-    return rx.box(
-        rx.hstack(
-            rx.image(src="favicon.ico"),
-            rx.heading("My App"),
-        ),
-        rx.spacer(),
-        rx.menu(
-            rx.menu_button("Menu"),
-        ),
-        position="fixed",
+    return rx.hstack(
+            rx.image(src="avatar.png",
+                        width="50px",
+                        height="auto",
+                        border_radius="15px 50px",
+                        border="5px solid #555",
+                        box_shadow="lg"),
+            rx.heading("Alberto García", font_size="1em"),        
+        position="sticky",
+        bg="blue",
+        padding_x="16px",
+        padding_y="8px",
         width="100%",
-        top="0px",
-        z_index="5",
-    )
+        z_index = "999",
+        top="0px"
+        )
+    
