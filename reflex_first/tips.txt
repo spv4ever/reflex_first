@@ -2,3 +2,4 @@ pip install --upgrade reflex --> update de reflex
 pip install --upgrade pip --> update de pip
 https://fonts.google.com
     prueba con Agbalumo-Regular
+reflex export --frontend-only > ejecutar proceso de exportación proyecto a zip
