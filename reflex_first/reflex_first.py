@@ -10,6 +10,10 @@ from reflex_first.views.footer import footer
 import reflex_first.styles.styles as styles
 from reflex_first.styles.styles import Size as Size
 
+#class State(rx.State):
+#    """The app state."""
+#    pass
+
 def index() -> rx.Component:
     return rx.box(
         navbar(),
