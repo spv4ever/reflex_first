@@ -1,4 +1,5 @@
 import reflex as rx
+from reflex_first.styles.styles import Size as Size
 
 def navbar():
     return rx.hstack(
@@ -10,9 +11,9 @@ def navbar():
                         box_shadow="lg"),
             rx.heading("Alberto García", font_size="1em"),        
         position="sticky",
-        bg="blue",
-        padding_x="16px",
-        padding_y="8px",
+        bg="lightgray",
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.SMALL.value,
         width="100%",
         z_index = "999",
         top="0px"
