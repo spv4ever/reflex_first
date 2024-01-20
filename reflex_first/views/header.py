@@ -2,19 +2,29 @@ import reflex as rx
 from reflex_first.componentes.linkicon import linkicon
 from reflex_first.componentes.info_text import info_text
 from reflex_first.styles.styles import Size as Size
+from reflex_first.styles.colors import Color as Color
+from reflex_first.styles.colors import TextColor as TextColor
+from reflex_first.styles.fonts import Fuentes as Fuentes
 
 def header()-> rx.Component:
     return rx.vstack(
             rx.hstack(
-                rx.avatar(name="Albert García",size="xl", src = "avatar2.png"),
+                rx.avatar(name="Albert García",
+                          size="xl", 
+                          src = "avatar3.png",
+                          padding="2px",
+                          border="4px",
+                          border_color = Color.PRIMARY.value,
+                          ),
                 rx.vstack(
                     rx.heading(
-                        'Alberto García', 
-                        size= "lg"
+                        'Alberto García',
+                        size = "lg"
                         ),
                     rx.text(
                         "@spv4ever",
-                        margin_top="0px !important"
+                        margin_top=Size.ZERO.value,
+                        color = TextColor.BODY.value,
                         ),
                     rx.hstack(
                     linkicon("https://x.com"),
@@ -40,7 +50,10 @@ def header()-> rx.Component:
                 aprendiendo cada día y python me está fascinando. Actualmente sigo desarrollando
                 principalmente rutinas y procesos en python que llevarían horas de trabajo y enormes
                 tablas dinámicas en excel. Entre mis últimos aprendizajes ha sido generar una app para
-                subir de forma masiva diferentes excels a una base de datos SQL."""),
+                subir de forma masiva diferentes excels a una base de datos SQL.""",
+                color = TextColor.BODY.value,
+                ),
+        font_family = Fuentes.DEFAULT.value,
         spacing=Size.BIG.value,
         align_items="start",
         )

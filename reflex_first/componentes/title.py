@@ -3,9 +3,9 @@ import reflex_first.styles.styles as styles
 
 def title(text: str)->rx.Component:
     return rx.heading(
-        text, 
-        size="lg",
+        text,
+        size = "lg",
         style=styles.title_style,
-        padding_top=styles.Size.DEFAULT.value,
+        
 
         )
